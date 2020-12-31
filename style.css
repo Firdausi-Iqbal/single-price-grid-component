@@ -1,0 +1,171 @@
+/* color
+- lighter Cyan: 2cbab8;
+- Cyan: 2ab2af;
+- Bright Yellow: c0df34;
+- Light Gray: e5eff5;
+- Grayish Blue: 98a6bd;
+*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: #FFF;
+  font-size: 1rem;
+  font-family: 'Karla', sans-serif;
+  background-color: #e5eff5;
+}
+h2{
+  font-weight: 700;
+}
+/* container */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 8% 25%;
+  box-shadow: 100px;
+}
+
+/* top section */
+.top-section {
+  background-color: #FFF;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  line-height: 2;
+  padding: 5%;
+  width: 100%;
+}
+
+.top-section>h1 {
+  color: #2ab2af;
+}
+
+.top-section>h2 {
+  color: #c0df34;
+}
+
+.top-section>p {
+  color: #98a6bd;
+}
+
+/* bottom section */
+.bottom-section {
+  font-weight: 400;
+  line-height: 1.5;
+  width: 50%;
+}
+
+.section-content {
+  margin-left: 10%;
+}
+
+
+p.section-content {
+
+  margin-top: 0;
+}
+
+h2.section-content {
+  font-size: 1.125rem;
+  margin-top: 8%;
+  margin-bottom: 5%;
+}
+
+.subscription {
+  background-color: #2ab2af;
+  border-bottom-left-radius: 10px;
+}
+
+p.pricing {
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+span.pricing {
+  color: #e5eff5;
+  display: inline-block;
+  font-weight: 400;
+  font-size: 1rem;
+  margin: 10px 0 10px 20px;
+  position: absolute;
+}
+
+.signUp-button {
+  border: none;
+  border-radius: 5px;
+  box-shadow: 10px;
+  color: #FFF;
+  background-color: #c0df34;
+  margin: 8% 10%;
+  text-align: center;
+  width: 80%;
+  line-height: 3;
+}
+
+.button-text {
+  align-items: center;
+  vertical-align: middle;
+}
+
+.why {
+  background-color: #2cbab8;
+  border-bottom-right-radius: 10px;
+}
+
+.list {
+  color: #e5eff5;
+  font-weight: 400;
+  margin-top: 15px;
+  font-size: 0.8rem;
+  list-style-type: none;
+}
+
+/* media query */
+@media (max-width:1100px) {
+  h2, h3 {
+    font-size: 1.125rem;
+  }
+
+  /* container */
+  .container {
+    padding: 8% 8%;
+  }
+
+  /* top section */
+  .top-section {
+    padding: 10%;
+  }
+
+  .top-section>h1 {
+    font-size: 1.5rem;
+  }
+
+  .top-section>h2 {
+    margin: 20px auto 20px;
+  }
+
+  .top-section>p {
+    color: #98a6bd;
+  }
+
+  /* bottom section */
+  .bottom-section {
+    width: 100%;
+  }
+
+  .subscription {
+    border-bottom-left-radius: 0;
+  }
+
+  .signUp-button {
+    line-height: 4;
+  }
+  .why {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+  .list {
+    margin-bottom: 40px;
+  }
+}
